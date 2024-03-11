@@ -6,7 +6,7 @@
   "scripts": {
     "build:dev": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
-    "watch": "webpack serve --open"
+    "start": "webpack serve --open"
   },
   "author": "",
   "license": "ISC",

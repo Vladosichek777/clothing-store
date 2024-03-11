@@ -12,6 +12,7 @@ module.exports = (env) => {
            assetModuleFilename: "assets/[hash][ext]",
            clean: true // for update dist folder after changes (important)
         },
+        devtool:'source-map', //add source-map for debugging
 
         plugins : [
             new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html') }), //for creating html web page. we can set a lot of options in this row, or use just created page

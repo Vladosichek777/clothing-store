@@ -1,0 +1,83 @@
+// "Dela Gothic One"
+@mixin h1-desctop() {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 64px;
+    line-height: 71.87px;
+    font-weight: 400;
+    color: $black-color;
+}
+@mixin h2-desctop() {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 36px;
+    line-height: 50.51px;
+    font-weight: 400;
+    color: $black-color;
+}
+
+@mixin menu-element-bold() {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 18px;
+    line-height: 26.06px;
+    font-weight: 400;
+    color: $black-color;
+}
+
+// Raleways
+@mixin button() {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 18.78px;
+    font-weight: 600;
+    color: $black-color;
+}
+
+@mixin raleway-12-light() {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    line-height: 19.97px;
+    font-weight: 300;
+    color: $black-color;
+}
+
+@mixin raleway-12-semibold() {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    line-height: 19.97px;
+    font-weight: 600;
+    color: $black-color;
+}
+@mixin raleway-14-light() {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height: 23.27px;
+    font-weight: 300;
+    color: $black-color;
+}
+@mixin raleway-14-bold() {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height:23.27px;
+    font-weight: 700;
+    color: $black-color;
+}
+@mixin raleway-16-regular() {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height:18.78px;
+    font-weight: 400;
+    color: $black-color;
+}
+@mixin raleway-16-bold() {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height:18.78px;
+    font-weight: 700;
+    color: $black-color;
+}
+@mixin raleway-14-subheading() {
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    line-height:16.44px;
+    font-weight: 400;
+    color: $black-color;
+}

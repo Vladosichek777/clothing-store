@@ -1,0 +1,55 @@
+.header-catalog {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: -500%;
+    min-width: 86%;
+    transition: top .5s;
+
+    &--active {
+        top: 75%;
+        z-index: 1000;
+    }
+
+    &__left {
+        max-width: 150px;
+        @include menu-element-bold;
+    }
+    &__right {
+        width: 60%;
+    }
+    
+    &__img {
+        max-width: 200px;
+    }
+
+    &-window-list {
+        li:not(:last-child) {
+            margin-bottom: 25px;
+        }
+        &__item {
+            text-transform: uppercase;
+            color: $gray-menu;
+            transition: color .3s;
+            &:hover {
+                color: $black-color;
+            }
+        }
+    }
+
+    &-window-sublist {
+        &__item {
+            @include raleway-14-light;
+            text-transform: uppercase;
+            color: $gray-menu;
+            transition: all .3s;
+            &:hover {
+                @include raleway-14-bold;
+                color: $red-color;
+            }
+        }
+    }
+}

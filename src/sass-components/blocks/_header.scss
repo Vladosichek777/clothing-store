@@ -1,3 +1,56 @@
-h1{
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: relative;
+
+    &__flex {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: 1px solid red;
+    }
     
+    &-manipulation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include raleway-16-regular;
+        & > *:not(:last-child) {
+            margin-right: 33px;
+        }
+        &__number {
+            color: $black-color;
+        }
+        &__basket {
+            img {
+                width: 30px;
+            }
+           
+        }
+        &__select {
+            @include raleway-16-regular;
+            border: none
+        }
+    }
 }
+
+.navigation {
+    &__links {
+        @include raleway-16-regular;
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+        &:hover {
+            color:$red-color;
+        }
+    }
+}
+
+.logo {
+    display: block;
+   &__item {
+    display: block;
+    width: 148px;
+   } 
+}
+

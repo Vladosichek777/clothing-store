@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack --env mode=development --watch",
-    "build:prod": "webpack --env mode=production",
+    "build:prod": "webpack --env mode=production --watch",
     "start": "webpack serve --open"
   },
   "author": "",

@@ -7,7 +7,6 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        outline: 1px solid red;
     }
     
     &-manipulation {
@@ -36,6 +35,7 @@
 
 .navigation {
     &__links {
+        transition: color .4s;
         @include raleway-16-regular;
         &:not(:last-child) {
             margin-right: 30px;
@@ -44,6 +44,10 @@
             color:$red-color;
         }
     }
+}
+
+.navigation__links--active {
+    color:$red-color;
 }
 
 .logo {

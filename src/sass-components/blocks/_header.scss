@@ -33,9 +33,10 @@
     }
 
     &__burger {
+        display: none;
         border: none;
         background-color: inherit;
-        padding: 15px;
+        padding: 10px;
         cursor: pointer;
         transition: all .3s;
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -103,5 +104,34 @@
     .navigation {
         display: none;
     }
+    .header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &__burger {
+            display: block;
+        }
+
+        &-manipulation {
+            &__number {
+                display: none;
+            }
+        }
+
+       
+    }
  
+}
+
+@media(max-width: 450px) {
+    .header {
+        &__burger {
+            padding: 5px;
+        }
+
+        &-manipulation {
+            &__select {
+                display: none;
+            }
+        }
+    }
 }

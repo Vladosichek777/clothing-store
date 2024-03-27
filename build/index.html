@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<script defer src="maindbeb636fb7e7161b7bf9.js"></script><link href="main8f401f65f2b7eb516b3b.css" rel="stylesheet"></head>
+<script defer src="main9d78f0969636f6c84482.js"></script><link href="main43671a1f2bfb49ed1d28.css" rel="stylesheet"></head>
 <body>
     <header class="header">
         <div class="container">
@@ -23,14 +23,14 @@
                  </a>
                  <div class="header-manipulation">
                     <select class="header-manipulation__select header-manipulation__select--lang">
-                        <option value="">UA</option>
-                        <option value="">ENG</option>
-                        <option value="">DE</option>
+                        <option value="UA">UA</option>
+                        <option value="ENG">ENG</option>
+                        <option value="DE">DE</option>
                     </select>
                     <select class="header-manipulation__select header-manipulation__select--money">
-                        <option value="">ГРН</option>
-                        <option value="">USD</option>
-                        <option value="">EUR</option>
+                        <option value="GRN">ГРН</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
                     </select>
                    
                     <a href="tel:+380978889292" class="header-manipulation__number ">+38 097 888 92 92</a>
@@ -54,8 +54,32 @@
                     </div>
                     <img class="header-catalog__img" src="assets/images/catalog-header.png" alt="catalog-header">
                 </div>
-                <div class="header__mobile-menu">
-                    
+                <div class="mobile-menu">
+                    <nav class="navigation navigation--mobile">
+                        <a href="#" class="navigation__links navigation__links--mobile">Каталог</a>
+                        <a href="#" class="navigation__links navigation__links--mobile">Знижки</a>
+                        <a href="#" class="navigation__links navigation__links--mobile">Блог</a>
+                        <a href="#" class="navigation__links navigation__links--mobile">Про нас</a>
+                     </nav>
+                     <div class="mobile-menu__choose-flex">
+                        <form>
+                            <input type="radio" id="ua" name="choose-language" value="UA" checked>
+                            <label class="mobile-menu__choose-value" for="ua">UA</label>
+                            <input type="radio" id="eng" name="choose-language" value="ENG">
+                            <label class="mobile-menu__choose-value" for="eng">ENG</label>
+                            <input type="radio" id="deu" name="choose-language" value="DE">
+                            <label class="mobile-menu__choose-value" for="deu">DE</label>
+                         </form>
+                         <div class="mobile-menu__line"></div>
+                         <form>
+                            <input type="radio" id="grn" name="choose-currency" value="GRN" checked>
+                            <label class="mobile-menu__choose-value" for="grn">ГРН</label>
+                            <input type="radio" id="usd" name="choose-currency" value="USD">
+                            <label class="mobile-menu__choose-value" for="usd">USD</label>
+                            <input type="radio" id="eur" name="choose-currency" value="EUR">
+                            <label class="mobile-menu__choose-value" for="eur">EUR</label>
+                         </form>
+                     </div>
                 </div>
             </div>
     </header>

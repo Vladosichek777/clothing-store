@@ -147,6 +147,17 @@ p {
   margin-bottom: 0em;
 }
 
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .header {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -250,6 +261,23 @@ p {
   .navigation {
     display: none;
   }
+  .navigation--mobile {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .navigation__links:not(:last-child) {
+    margin-right: 0px;
+  }
+  .navigation__links--mobile {
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 18px;
+    line-height: 26.06px;
+    font-weight: 800;
+    color: #9A9A9A;
+    margin-bottom: 20px;
+    text-align: center;
+  }
   .header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -260,13 +288,13 @@ p {
   .header-manipulation__number {
     display: none;
   }
+  .header-manipulation__select {
+    display: none;
+  }
 }
 @media (max-width: 450px) {
   .header__burger {
     padding: 5px;
-  }
-  .header-manipulation__select {
-    display: none;
   }
 }
 .header-catalog {
@@ -336,10 +364,75 @@ p {
   color: #DA1F39;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .header-catalog {
     display: none;
   }
 }
+.mobile-menu {
+  position: absolute;
+  top: 100px;
+  left: -200%;
+  width: 80vw;
+  min-height: 30vh;
+  box-shadow: 1px 1px 18px -9px;
+  border-radius: 10px;
+  padding: 30px;
+  transition: left 0.5s;
+  display: none;
+}
+.mobile-menu input {
+  display: none;
+}
+.mobile-menu input:checked + label {
+  transition: all 0.3s;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 700;
+  color: #000000;
+}
+.mobile-menu__choose-value {
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  line-height: 18.78px;
+  font-weight: 400;
+  color: #000000;
+}
+.mobile-menu__choose-value:not(:last-child) {
+  margin-right: 3px;
+}
+.mobile-menu__choose-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu__line {
+  height: 30px;
+  width: 1px;
+  border-radius: 1px;
+  background-color: black;
+}
+.mobile-menu--open {
+  left: 10px;
+}
 
-/*# sourceMappingURL=main8f401f65f2b7eb516b3b.css.map*/
+@media (max-width: 700px) {
+  .mobile-menu {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  .mobile-menu {
+    padding: 10px;
+  }
+}
+@media (min-width: 500px) {
+  .mobile-menu__choose-flex {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=main43671a1f2bfb49ed1d28.css.map*/

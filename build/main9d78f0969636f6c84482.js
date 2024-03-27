@@ -25,7 +25,7 @@ var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_get
 var ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);
 var ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);
 var ___HTML_LOADER_REPLACEMENT_3___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_3___);
-var code = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Document</title>\n</head>\n<body>\n    <header class=\"header\">\n        <div class=\"container\">\n            <div class=\"header__flex\">\n                <nav class=\"navigation\">\n                    <a href=\"#\" data-catalog class=\"navigation__links\">Каталог</a>\n                    <a href=\"#\" class=\"navigation__links\">Знижки</a>\n                    <a href=\"#\" class=\"navigation__links\">Блог</a>\n                    <a href=\"#\" class=\"navigation__links\">Про нас</a>\n                 </nav>\n                 <button class=\"header__burger\">\n                    <img class=\"header__burger-img\" src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"burger-menu\" >\n                 </button>\n                 <a href=\"/\" class=\"logo\">\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\" class=\"logo__item\">\n                 </a>\n                 <div class=\"header-manipulation\">\n                    <select class=\"header-manipulation__select header-manipulation__select--lang\">\n                        <option value=\"\">UA</option>\n                        <option value=\"\">ENG</option>\n                        <option value=\"\">DE</option>\n                    </select>\n                    <select class=\"header-manipulation__select header-manipulation__select--money\">\n                        <option value=\"\">ГРН</option>\n                        <option value=\"\">USD</option>\n                        <option value=\"\">EUR</option>\n                    </select>\n                   \n                    <a href=\"tel:+380978889292\" class=\"header-manipulation__number \">+38 097 888 92 92</a>\n                    <a href=\"#\" class=\"header-manipulation__basket\">\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"basket\">\n                    </a>\n                 </div>\n                <div class=\"header-catalog\">\n                    <div class=\"header-catalog__left\">\n                        <ul class=\"header-catalog-window-list\">\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"woman\">жінкам</a></li>\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"man\">чоловікам</a></li>\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"child\">дітям</a></li>\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"accessories\">аксесуари</a></li>\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"house\">дім</a></li>\n                        </ul>\n                    </div>\n                    <div class=\"header-catalog__right\">\n                        <ul class=\"header-catalog-window-sublist\">\n                        </ul>\n                    </div>\n                    <img class=\"header-catalog__img\" src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"catalog-header\">\n                </div>\n                <div class=\"header__mobile-menu\">\n                    \n                </div>\n            </div>\n    </header>\n</body>\n</html>";
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <header class=\"header\">\r\n        <div class=\"container\">\r\n            <div class=\"header__flex\">\r\n                <nav class=\"navigation\">\r\n                    <a href=\"#\" data-catalog class=\"navigation__links\">Каталог</a>\r\n                    <a href=\"#\" class=\"navigation__links\">Знижки</a>\r\n                    <a href=\"#\" class=\"navigation__links\">Блог</a>\r\n                    <a href=\"#\" class=\"navigation__links\">Про нас</a>\r\n                 </nav>\r\n                 <button class=\"header__burger\">\r\n                    <img class=\"header__burger-img\" src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"burger-menu\" >\r\n                 </button>\r\n                 <a href=\"/\" class=\"logo\">\r\n                    <img src=\"" + ___HTML_LOADER_REPLACEMENT_1___ + "\" alt=\"logo\" class=\"logo__item\">\r\n                 </a>\r\n                 <div class=\"header-manipulation\">\r\n                    <select class=\"header-manipulation__select header-manipulation__select--lang\">\r\n                        <option value=\"UA\">UA</option>\r\n                        <option value=\"ENG\">ENG</option>\r\n                        <option value=\"DE\">DE</option>\r\n                    </select>\r\n                    <select class=\"header-manipulation__select header-manipulation__select--money\">\r\n                        <option value=\"GRN\">ГРН</option>\r\n                        <option value=\"USD\">USD</option>\r\n                        <option value=\"EUR\">EUR</option>\r\n                    </select>\r\n                   \r\n                    <a href=\"tel:+380978889292\" class=\"header-manipulation__number \">+38 097 888 92 92</a>\r\n                    <a href=\"#\" class=\"header-manipulation__basket\">\r\n                        <img src=\"" + ___HTML_LOADER_REPLACEMENT_2___ + "\" alt=\"basket\">\r\n                    </a>\r\n                 </div>\r\n                <div class=\"header-catalog\">\r\n                    <div class=\"header-catalog__left\">\r\n                        <ul class=\"header-catalog-window-list\">\r\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"woman\">жінкам</a></li>\r\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"man\">чоловікам</a></li>\r\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"child\">дітям</a></li>\r\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"accessories\">аксесуари</a></li>\r\n                            <li><a href=\"/\" class=\"header-catalog-window-list__item\" data-category=\"house\">дім</a></li>\r\n                        </ul>\r\n                    </div>\r\n                    <div class=\"header-catalog__right\">\r\n                        <ul class=\"header-catalog-window-sublist\">\r\n                        </ul>\r\n                    </div>\r\n                    <img class=\"header-catalog__img\" src=\"" + ___HTML_LOADER_REPLACEMENT_3___ + "\" alt=\"catalog-header\">\r\n                </div>\r\n                <div class=\"mobile-menu\">\r\n                    <nav class=\"navigation navigation--mobile\">\r\n                        <a href=\"#\" class=\"navigation__links navigation__links--mobile\">Каталог</a>\r\n                        <a href=\"#\" class=\"navigation__links navigation__links--mobile\">Знижки</a>\r\n                        <a href=\"#\" class=\"navigation__links navigation__links--mobile\">Блог</a>\r\n                        <a href=\"#\" class=\"navigation__links navigation__links--mobile\">Про нас</a>\r\n                     </nav>\r\n                     <div class=\"mobile-menu__choose-flex\">\r\n                        <form>\r\n                            <input type=\"radio\" id=\"ua\" name=\"choose-language\" value=\"UA\" checked>\r\n                            <label class=\"mobile-menu__choose-value\" for=\"ua\">UA</label>\r\n                            <input type=\"radio\" id=\"eng\" name=\"choose-language\" value=\"ENG\">\r\n                            <label class=\"mobile-menu__choose-value\" for=\"eng\">ENG</label>\r\n                            <input type=\"radio\" id=\"deu\" name=\"choose-language\" value=\"DE\">\r\n                            <label class=\"mobile-menu__choose-value\" for=\"deu\">DE</label>\r\n                         </form>\r\n                         <div class=\"mobile-menu__line\"></div>\r\n                         <form>\r\n                            <input type=\"radio\" id=\"grn\" name=\"choose-currency\" value=\"GRN\" checked>\r\n                            <label class=\"mobile-menu__choose-value\" for=\"grn\">ГРН</label>\r\n                            <input type=\"radio\" id=\"usd\" name=\"choose-currency\" value=\"USD\">\r\n                            <label class=\"mobile-menu__choose-value\" for=\"usd\">USD</label>\r\n                            <input type=\"radio\" id=\"eur\" name=\"choose-currency\" value=\"EUR\">\r\n                            <label class=\"mobile-menu__choose-value\" for=\"eur\">EUR</label>\r\n                         </form>\r\n                     </div>\r\n                </div>\r\n            </div>\r\n    </header>\r\n</body>\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -74,10 +74,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/ts/changeButtonBurger.ts":
-/*!**************************************!*\
-  !*** ./src/ts/changeButtonBurger.ts ***!
-  \**************************************/
+/***/ "./src/ts/mobile-menu.ts":
+/*!*******************************!*\
+  !*** ./src/ts/mobile-menu.ts ***!
+  \*******************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 
@@ -85,30 +85,45 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
+const cross_svg_1 = __importDefault(__webpack_require__(/*! ../assets/icons/cross.svg */ "./src/assets/icons/cross.svg"));
+const burger_menu_svg_1 = __importDefault(__webpack_require__(/*! ../assets/icons/burger-menu.svg */ "./src/assets/icons/burger-menu.svg"));
 const burgerIcon = document.querySelector('.header__burger');
 const imgBurgerIcon = document.querySelector('.header__burger-img');
-const cross_svg_1 = __importDefault(__webpack_require__(/*! ../assets/icons/cross.svg */ "./src/assets/icons/cross.svg"));
+const mobileMenu = document.querySelector('.mobile-menu');
+let isMenuOpen = false;
 const arrPathImgIcon = [
-    'assets/icons/burger-menu.svg',
+    burger_menu_svg_1.default,
     cross_svg_1.default
 ];
-let count = 0;
-burgerIcon === null || burgerIcon === void 0 ? void 0 : burgerIcon.addEventListener('click', () => {
-    burgerIcon.classList.add('header__burger--open');
+function changeBurgerIcon() {
+    burgerIcon === null || burgerIcon === void 0 ? void 0 : burgerIcon.classList.add('header__burger--open');
     setTimeout(() => {
         if (imgBurgerIcon) {
-            if (count == 1) {
-                imgBurgerIcon.src = arrPathImgIcon[0];
-                burgerIcon.classList.remove('header__burger--open');
-                count = 0;
-                return;
-            }
-            imgBurgerIcon.src = arrPathImgIcon[1];
-            burgerIcon.classList.remove('header__burger--open');
-            count++;
+            imgBurgerIcon.src = arrPathImgIcon[isMenuOpen ? 0 : 1];
+            isMenuOpen = !isMenuOpen;
+            burgerIcon === null || burgerIcon === void 0 ? void 0 : burgerIcon.classList.remove('header__burger--open');
         }
     }, 400);
+}
+function openMobileMenu() {
+    mobileMenu === null || mobileMenu === void 0 ? void 0 : mobileMenu.classList.toggle('mobile-menu--open');
+}
+function closeMobileMenu() {
+    document.body.addEventListener('click', (e) => {
+        let target = e.target;
+        if (!target.className.includes('header__burger') && !target.className.includes('mobile-menu')) {
+            if (mobileMenu === null || mobileMenu === void 0 ? void 0 : mobileMenu.classList.contains('mobile-menu--open')) {
+                mobileMenu === null || mobileMenu === void 0 ? void 0 : mobileMenu.classList.remove('mobile-menu--open');
+                changeBurgerIcon();
+            }
+        }
+    });
+}
+burgerIcon === null || burgerIcon === void 0 ? void 0 : burgerIcon.addEventListener('click', () => {
+    openMobileMenu();
+    changeBurgerIcon();
 });
+closeMobileMenu();
 
 
 /***/ }),
@@ -381,10 +396,10 @@ __webpack_require__(/*! ./index.html */ "./src/index.html");
 __webpack_require__(/*! ./style.scss */ "./src/style.scss");
 __webpack_require__(/*! ./ts/show-catalog */ "./src/ts/show-catalog.ts");
 __webpack_require__(/*! ./ts/wtiteSubcategory */ "./src/ts/wtiteSubcategory.ts");
-__webpack_require__(/*! ./ts/changeButtonBurger */ "./src/ts/changeButtonBurger.ts");
+__webpack_require__(/*! ./ts/mobile-menu */ "./src/ts/mobile-menu.ts");
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=maindbeb636fb7e7161b7bf9.js.map
+//# sourceMappingURL=main9d78f0969636f6c84482.js.map

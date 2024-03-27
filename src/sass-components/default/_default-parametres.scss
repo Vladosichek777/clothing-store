@@ -12,3 +12,14 @@ p {
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
+
+html {
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

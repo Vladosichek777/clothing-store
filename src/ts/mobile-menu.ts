@@ -20,6 +20,7 @@ function changeBurgerIcon() {
             imgBurgerIcon.src = arrPathImgIcon[isMenuOpen ? 0 : 1]
             isMenuOpen = !isMenuOpen;
             burgerIcon?.classList.remove('header__burger--open');
+            document.body.classList.toggle('modal-window-open');
         }
     },400)
 }
@@ -31,10 +32,14 @@ function openMobileMenu() {
 function closeMobileMenu() {
     document.body.addEventListener('click', (e) => {
       let target = e.target as HTMLElement;
-      if(!target.className.includes('header__burger') && !target.className.includes('mobile-menu')) {
+      
+      if(!target.className.includes('header__burger') && 
+      !target.className.includes('mobile-menu') &&
+       target.tagName !== ('INPUT' || 'FORM')) {
         if(mobileMenu?.classList.contains('mobile-menu--open')) {
             mobileMenu?.classList.remove('mobile-menu--open');
             changeBurgerIcon()
+          
         }
       }
     })

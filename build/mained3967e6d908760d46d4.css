@@ -152,10 +152,14 @@ html {
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.modal-window-open {
+  overflow: hidden;
 }
 
 .header {
@@ -373,13 +377,15 @@ body {
   position: absolute;
   top: 100px;
   left: -200%;
-  width: 80vw;
+  width: 95vw;
   min-height: 30vh;
   box-shadow: 1px 1px 18px -9px;
   border-radius: 10px;
   padding: 30px;
   transition: left 0.5s;
+  box-sizing: border-box;
   display: none;
+  background-color: #f7f7f7;
 }
 .mobile-menu input {
   display: none;
@@ -415,7 +421,7 @@ body {
   background-color: black;
 }
 .mobile-menu--open {
-  left: 10px;
+  left: 2%;
 }
 
 @media (max-width: 700px) {
@@ -435,4 +441,4 @@ body {
   }
 }
 
-/*# sourceMappingURL=main43671a1f2bfb49ed1d28.css.map*/
+/*# sourceMappingURL=mained3967e6d908760d46d4.css.map*/

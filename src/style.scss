@@ -3,8 +3,11 @@
 @import './sass-components/default/_default-variables.scss';
 @import './sass-components/default/default-mixin-fonts.scss';
 @import './sass-components/default/default-parametres.scss';
+@import './sass-components/reuse-blocks/button';
 @import './sass-components/blocks/header.scss';
 @import './sass-components/blocks/header-catalog';
 @import './sass-components/blocks/mobile-menu';
+@import './sass-components/blocks/preview-block';
+@import './sass-components/blocks/sub-preview';
 
 

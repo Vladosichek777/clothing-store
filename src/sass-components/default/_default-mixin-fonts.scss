@@ -1,16 +1,16 @@
 // "Dela Gothic One"
 @mixin h1-desctop() {
     font-family: "Dela Gothic One", sans-serif;
-    font-size: 64px;
-    line-height: 71.87px;
-    font-weight: 400;
+    font-size: clamp(30px, 8vw, 65px);
+    line-height: calc(71.87px / 64px * 100%); 
+    font-weight: 800;
     color: $black-color;
 }
 @mixin h2-desctop() {
     font-family: "Dela Gothic One", sans-serif;
-    font-size: 36px;
-    line-height: 50.51px;
-    font-weight: 400;
+    font-size:clamp(15px, 4vw, 50px);
+    line-height: 1;
+    font-weight: 800;
     color: $black-color;
 }
 
@@ -80,4 +80,20 @@
     line-height:16.44px;
     font-weight: 400;
     color: $black-color;
+}
+
+
+
+@mixin button() {
+    display: inline-block;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 16.44px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    font-weight: 400;
+    color: $default-buttons;
+    padding: 17px 27.5px;
+    background-color: $red-color;
+    text-transform: uppercase;
 }

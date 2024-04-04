@@ -33,3 +33,18 @@
         }
     }
 }
+
+
+@media(max-width:600px) {
+    .sub-preview {
+        &__inner {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__img {
+            width: 50%;
+        }
+       
+    }
+}

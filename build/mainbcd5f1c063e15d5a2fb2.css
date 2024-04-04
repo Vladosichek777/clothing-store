@@ -564,5 +564,14 @@ body {
     min-height: 60vh;
   }
 }
+@media (max-width: 600px) {
+  .sub-preview__inner {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .sub-preview__img {
+    width: 50%;
+  }
+}
 
-/*# sourceMappingURL=mainfcb6b6a902e54a5da959.css.map*/
+/*# sourceMappingURL=mainbcd5f1c063e15d5a2fb2.css.map*/

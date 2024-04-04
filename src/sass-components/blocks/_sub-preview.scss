@@ -1,0 +1,35 @@
+.sub-preview {
+    &__inner {
+        padding: 130px 0;
+        display: flex;
+        justify-content: space-between;
+        min-height: 80vh;
+    }
+
+    &__img {
+       width: calc(210 / 1280 * 100%);
+        &.left {
+            align-self: flex-start;
+        }
+        &.right {
+            align-self: flex-end;
+        }
+    }
+
+    &__text {
+        @include h2-desctop;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        text-align: center; 
+        align-self: center;
+
+    }
+}
+
+@media(max-width:800px) {
+    .sub-preview {
+        &__inner {
+            min-height: 60vh;
+        }
+    }
+}

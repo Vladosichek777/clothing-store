@@ -9,7 +9,7 @@ import 'swiper/css/scrollbar';
 const swiper = new Swiper('.swiper', {
     modules: [Navigation, Pagination, Scrollbar],
     loop: true,
-    slidesPerView: 4,
+    slidesPerView: 3.5,
     spaceBetween: 50,
 
   // If we need pagination
@@ -23,8 +23,21 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-right',
         prevEl: '.swiper-button-left',
     },
-    // scrollbar: {
-    //     el: ".swiper-scrollbar",
-    //   },
+
+    breakpoints: {
+      100: {
+        slidesPerView: 1
+      },
+      320: {
+        slidesPerView: 2
+      },
+      700: {
+        slidesPerView: 3
+      },
+      1000: {
+        slidesPerView: 3.6
+      }
+
+    }
 });
 

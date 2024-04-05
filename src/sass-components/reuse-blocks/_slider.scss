@@ -9,15 +9,29 @@
         width: 323px;
     }
 
-    &__img {
-        max-width: 100%;
-        transition: transform .7s;
-        cursor: pointer;
+    &-slide {
+        &__img {
+            max-width: 100%;
+            transition: transform .7s;
+            margin-bottom: 10px;
+            cursor: pointer;
+    
+            &:hover {
+                transform: scale(.95);
+            }
+        }
 
-        &:hover {
-            transform: scale(.95);
+        &__title {
+            @include raleway-14-light;
+            text-align: center;
+        }
+
+        &__price {
+            @include  raleway-14-bold;
         }
     }
+
+   
 
     &-button {
         
@@ -46,3 +60,16 @@
     }
 }
 
+@media(max-width: 681px) {
+    .swiper {
+        &-slide {
+            &__title {
+                font-size: 12px;
+            }
+
+            &__price {
+                font-size: 12px;
+            }
+        }
+    }
+}

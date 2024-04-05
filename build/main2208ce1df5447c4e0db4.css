@@ -600,13 +600,29 @@ body {
 .swiper-slide--castom {
   width: 323px;
 }
-.swiper__img {
+.swiper-slide__img {
   max-width: 100%;
   transition: transform 0.7s;
+  margin-bottom: 10px;
   cursor: pointer;
 }
-.swiper__img:hover {
+.swiper-slide__img:hover {
   transform: scale(0.95);
+}
+.swiper-slide__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 23.27px;
+  font-weight: 300;
+  color: #000000;
+  text-align: center;
+}
+.swiper-slide__price {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 23.27px;
+  font-weight: 700;
+  color: #000000;
 }
 .swiper-button-right {
   position: absolute;
@@ -628,6 +644,15 @@ body {
 }
 .swiper-button-left__item {
   width: 30px;
+}
+
+@media (max-width: 681px) {
+  .swiper-slide__title {
+    font-size: 12px;
+  }
+  .swiper-slide__price {
+    font-size: 12px;
+  }
 }
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.css ***!
@@ -1331,4 +1356,4 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-/*# sourceMappingURL=main819dc0888208dbf3cb15.css.map*/
+/*# sourceMappingURL=main2208ce1df5447c4e0db4.css.map*/

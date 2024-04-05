@@ -1,0 +1,16 @@
+.new-clothes {
+    &__title {
+        @include h2-desctop;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media(max-width: 600px) {
+    .new-clothes {
+        &__title {
+            margin-bottom: 15px;
+        }
+    }
+}

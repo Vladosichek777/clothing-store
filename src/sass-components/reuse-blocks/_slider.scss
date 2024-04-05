@@ -1,0 +1,48 @@
+.swiper {
+    &-wrapper {
+        &--castom {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    &-slide--castom {
+        width: 323px;
+    }
+
+    &__img {
+        max-width: 100%;
+        transition: transform .7s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(.95);
+        }
+    }
+
+    &-button {
+        
+        &-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 10;
+            cursor: pointer;
+            &__item {
+            width: 30px;
+               transform: rotate(-180deg); 
+            }
+        }
+
+        &-left {
+            position: absolute;
+            top: 0;
+            right: 60px;
+            z-index: 10;
+            cursor: pointer;
+            &__item {
+                width: 30px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,74 @@
+.info-collage {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    max-height: 650px;
+    max-width: 1280px;
+   padding-right: 20px;
+   padding-left: 20px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        padding-right: 7%;
+        padding-left: 7%;
+        background-color: #fff;
+    }
+
+    &-reusetext {
+        text-align: center;
+       &__small-title {
+        @include raleway-14-subheading;
+        color: $gray-dark-color;
+        text-transform: uppercase;
+       } 
+       &__big-title {
+        @include  h2-desctop;
+        text-transform: uppercase;
+        font-size:clamp(15px, 4vw, 40px);
+       }
+       &__text {
+        padding-top: 20px;
+        @include raleway-14-light;
+       }
+    }
+
+    &__button {
+        margin-top: 50px;
+        max-width: fit-content;
+    }
+    &__img {
+         width: 50%;
+         object-fit: cover;
+    }
+}
+
+
+@media(max-width:550px) {
+    .info-collage {
+        &__text {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+@media(max-width:500px) {
+    .info-collage {
+        padding-left: 5px;
+        padding-right: 5px;
+
+
+        &__button {
+            margin-top: 20px;
+            padding-right: 10px;
+            padding-left: 10px;
+         }
+    }
+    
+}

@@ -59,6 +59,13 @@
         }
     }
 }
+.slider {
+    &__title {
+        @include h2-desctop;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
 
 @media(max-width: 681px) {
     .swiper {
@@ -70,6 +77,11 @@
             &__price {
                 font-size: 12px;
             }
+        }
+    }
+    .slider {
+        &__title {
+            margin-bottom: 15px;
         }
     }
 }

@@ -3,4 +3,5 @@ import "./style.scss";
 import "./ts/show-catalog";
 import "./ts/wtiteSubcategory";
 import "./ts/mobile-menu";
-import "./ts/slider";
+import "./ts/slider-config";
+import './ts/write-slide-info';

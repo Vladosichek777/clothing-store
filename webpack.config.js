@@ -1,6 +1,8 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const loader = require('sass-loader');
+const { optimize } = require('webpack');
 
 module.exports = (env) => {
     return {
@@ -9,7 +11,7 @@ module.exports = (env) => {
         output: {
            path: path.resolve(__dirname, 'build'),
            filename: '[name][contenthash].js',
-           assetModuleFilename: "assets/[hash][ext]",
+           assetModuleFilename: "assets/[name][ext]",
            clean: true // for update dist folder after changes (important)
         },
         devServer: {
@@ -20,14 +22,12 @@ module.exports = (env) => {
           hot:true
         },
          devtool:'source-map', //add source-map for debugging
-
-        plugins : [
-            new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html') }), //for creating html web page. we can set a lot of options in this row, or use just created page
-            new MiniCssExtractPlugin({ // for create a file style.css in build
-                filename:'[name][contenthash].css'
-            }),
-        ],
-
+         plugins : [
+          new HtmlWebpackPlugin({ template: path.resolve(__dirname, 'src/index.html') }), //for creating html web page. we can set a lot of options in this row, or use just created page
+          new MiniCssExtractPlugin({ // for create a file style.css in build
+              filename:'[name][contenthash].css'
+          }),
+      ],
         module: {
             rules:[
                 { test: /\.ts$/, use: 'ts-loader', exclude: /node_modules/ }, //add typescript loader
@@ -66,13 +66,12 @@ module.exports = (env) => {
                   { 
                     test: /\.(gif|ico|png|jpe?g|svg)$/i,
                     use: [
-                      {
+                    {
                         loader: 'image-webpack-loader',
                         options: {
                           mozjpeg: {
                             progressive: true,
                           },
-                          // optipng.enabled: false will disable optipng
                           optipng: {
                             enabled: false,
                           },
@@ -83,7 +82,6 @@ module.exports = (env) => {
                           gifsicle: {
                             interlaced: false,
                           },
-                          // the webp option will enable WEBP
                           webp: {
                             quality: 75
                           }
@@ -121,5 +119,4 @@ module.exports = (env) => {
             extensions: ['.ts', '.js'] // We can not write extensions at the end of import file(important)
         },
     }
-
-  };
+  }

@@ -690,6 +690,10 @@ body {
   padding-left: 7%;
   background-color: #fff;
 }
+.info-collage__text--2 {
+  order: 2;
+  align-items: flex-start;
+}
 .info-collage-reusetext {
   text-align: center;
 }
@@ -719,6 +723,9 @@ body {
   font-weight: 300;
   color: #000000;
 }
+.info-collage-reusetext--2 {
+  text-align: left;
+}
 .info-collage__button {
   margin-top: 50px;
   max-width: -moz-fit-content;
@@ -729,11 +736,74 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.info-collage__img-wrapper {
+  position: relative;
+  padding-right: 100px;
+}
+.info-collage__links {
+  padding-top: 30px;
+}
 
+.info-collage-2 {
+  display: flex;
+  justify-content: space-between;
+}
+.info-collage-2__image-1 {
+  width: 513px;
+  max-width: 100%;
+  height: 585px;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.info-collage-2__image-2 {
+  width: 380px;
+  max-width: 100%;
+  height: 520px;
+  transform: scale(-1, 1);
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+@media (max-width: 1000px) {
+  .info-collage-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-collage-2__image-1 {
+    height: 400px;
+  }
+  .info-collage-2__image-2 {
+    height: 450px;
+    padding-left: 30px;
+  }
+  .info-collage__text {
+    width: 80%;
+  }
+  .info-collage__text--2 {
+    margin-top: 200px;
+  }
+  .info-collage__img-wrapper {
+    padding-right: 30px;
+  }
+}
 @media (max-width: 550px) {
   .info-collage__text {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
+  }
+  .info-collage__text--2 {
+    margin-top: 100px;
+  }
+  .info-collage-2__image-2 {
+    width: 260px;
+    height: 380px;
   }
 }
 @media (max-width: 500px) {
@@ -755,6 +825,21 @@ body {
   .sales {
     margin-top: 100px;
   }
+}
+.links-arrow {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 16.44px;
+  font-weight: 400;
+  color: #000000;
+  color: #DA1F39;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  transition: transform 0.4s;
+}
+.links-arrow:hover {
+  transform: scale(1.05);
 }
 /*!***********************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[2].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper.css ***!
@@ -1458,4 +1543,4 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-/*# sourceMappingURL=main499f9e8a70a8bcc72cbb.css.map*/
+/*# sourceMappingURL=maina03055aee54764fead12.css.map*/

@@ -1,0 +1,59 @@
+.reuse-info {
+   text-align: center;
+
+   &__small-title {
+    @include raleway-14-subheading;
+    text-transform: uppercase;
+    color: $gray-dark-color;
+   }
+
+   &__big-title {
+    @include  h2-desctop;
+    text-transform: uppercase;
+    font-size: clamp(15px, 4vw, 35px);
+    line-height: 1.3;
+
+    &--second {
+        margin-bottom: 30px;
+    }
+   }
+
+   &__text {
+    @include raleway-14-bold();
+    font-weight: 200;
+
+    &--first {
+        margin-top: 20px;
+    }
+
+    &--second {
+        margin-bottom: 25px;
+    }
+    &--mobile1 {
+        display: none;
+        margin-top: 50px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+   }
+
+   &--second {
+    text-align: left;
+   }
+}
+
+@media(max-width:800px) {
+    .reuse-info {
+        &__text--first {
+            display: none;
+        }
+
+        &__text {
+            &--mobile1 {
+                display: block;
+            }
+        }
+     
+    }
+}

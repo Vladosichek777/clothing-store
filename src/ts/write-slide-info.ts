@@ -82,6 +82,7 @@ function writeSliderItem(nameOfArr:NodeListOf<Element>, object:InfoSlides, attr:
 
        if(slideAttr) {
         slideImage?.setAttribute('src', object[slideAttr].src);
+        slideImage?.setAttribute('loading', 'lazy');
         if(slideTitle) {
             slideTitle.textContent = object[slideAttr].title;
         }
@@ -92,42 +93,6 @@ function writeSliderItem(nameOfArr:NodeListOf<Element>, object:InfoSlides, attr:
     }
 }
 
-function writeSliders() {
- 
-    // for(let slide of arrNewClothes) {
-    //     const slideAttr: string | null = slide.getAttribute('data-new-clothes');
-    //     const slideImage: Element | null = slide.querySelector('.swiper-slide__img');
-    //     const slideTitle: Element | null = slide.querySelector('.swiper-slide__title');
-    //     const slidePrice: Element | null = slide.querySelector('.swiper-slide__price');
-
-    //    if(slideAttr) {
-    //     slideImage?.setAttribute('src', firstSliderInfo[slideAttr].src);
-    //     if(slideTitle) {
-    //         slideTitle.textContent = firstSliderInfo[slideAttr].title;
-    //     }
-    //     if(slidePrice) {
-    //         slidePrice.textContent = firstSliderInfo[slideAttr].price;
-    //     }
-    //    }
-    // }
-
-    // for(let slide of arrSales) {
-    //     const slideAttr: string | null = slide.getAttribute('data-sales');
-    //     const slideImage = slide.querySelector('.swiper-slide__img');
-    //     const slideTitle = slide.querySelector('.swiper-slide__title');
-    //     const slidePrice = slide.querySelector('.swiper-slide__price');
-
-    //     if(slideAttr) {
-    //         slideImage?.setAttribute('src', secondSliderInfo[slideAttr].src);
-    //         if(slideTitle) {
-    //             slideTitle.textContent = secondSliderInfo[slideAttr].title;
-    //         }
-    //         if(slidePrice) {
-    //             slidePrice.textContent = secondSliderInfo[slideAttr].price;
-    //         }
-    //     }
-    // }
-}
 
 writeSliderItem(arrNewClothes, firstSliderInfo, 'data-new-clothes')
 writeSliderItem(arrSales, secondSliderInfo, 'data-sales')

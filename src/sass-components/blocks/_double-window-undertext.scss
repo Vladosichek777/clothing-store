@@ -1,0 +1,25 @@
+.double-window-undertext {
+    text-align: center;
+    &--mobile {
+        display: none;
+        margin-top: 50px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__button {
+        display: none;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:800px) {
+    .double-window-undertext {
+        &--mobile {
+            display: block;
+        }
+        &__button {
+            display: inline-block;
+        }
+    }
+}

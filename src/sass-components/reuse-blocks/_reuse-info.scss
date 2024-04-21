@@ -29,12 +29,9 @@
     &--second {
         margin-bottom: 25px;
     }
-    &--mobile1 {
-        display: none;
-        margin-top: 50px;
-        text-align: center;
-        padding-left: 20px;
-        padding-right: 20px;
+
+    &--third {
+        margin-top: 20px;
     }
    }
 
@@ -48,12 +45,8 @@
         &__text--first {
             display: none;
         }
-
-        &__text {
-            &--mobile1 {
-                display: block;
-            }
+        &__text--third {
+            display: none;
         }
-     
     }
 }

@@ -18,6 +18,7 @@
         overflow: hidden;
         object-fit: cover;
         border-radius: 3px;
+        max-height: 100%;
         
 
         img {
@@ -44,8 +45,8 @@
         }
         &__img-item-wrap {
             width: calc(50% - 20px);
-            // height: calc(50% - 20px);
-            height: auto;
-        }
+            height: calc(50% - 20px);
+            max-height: 100%;
     }
+}
 }

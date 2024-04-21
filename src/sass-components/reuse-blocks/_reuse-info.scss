@@ -33,10 +33,20 @@
     &--third {
         margin-top: 20px;
     }
+
+    &--instagram {
+        color: $gray-dark-color;
+        max-width: 355px;
+        display: inline-block;
+        margin-top: 10px;
+    }
    }
 
    &--second {
     text-align: left;
+   }
+
+   &--instagram {
    }
 }
 

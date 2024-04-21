@@ -1,0 +1,19 @@
+.schedule {
+    @include raleway-14-subheading;
+
+    &--max-width {
+        position: relative;
+        max-width: 130px;
+        margin-top: 30px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: -34px;
+            background-image: url('./assets/icons/time-svgrepo-com.svg');
+            background-size: contain;
+        }
+    }
+}

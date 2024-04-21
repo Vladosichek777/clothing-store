@@ -4,6 +4,10 @@
         display: flex;
         justify-content: space-between;
         min-height: 80vh;
+
+        &--below {
+            flex-direction: column;
+        }
     }
 
     &__img {
@@ -30,6 +34,7 @@
 
         &--below {
             text-transform: none;
+            max-width: 70%;
         }
 
     }
@@ -41,6 +46,10 @@
             min-height: 60vh;
             flex-direction: column;
             gap: 30px;
+
+            &--below {
+                min-height: 40vh;
+            }
         }
         &__img {
             width: 50%;
@@ -48,11 +57,5 @@
     }
 }
 
-@media(max-width:1000px) {
-    .sub-preview {
-        &__inner--below {
-            flex-direction: column;
-        }
-    }
-}
+
 

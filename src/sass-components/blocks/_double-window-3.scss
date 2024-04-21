@@ -1,0 +1,59 @@
+$block-height-desctop: 650px;
+$block-heigt-tablet: 400px;
+$block-heigt-mobile: 300px;
+
+.double-window-3 {
+    position: relative;
+    background-image: url('./assets/images/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: $block-height-desctop;
+
+    &__nested-window {
+        position: absolute;
+        top: calc(50 / 650 * 100%);
+        left: 50%;
+        transform: translate(-50%, 0);
+        height: 100%;
+        width: 80vw;
+        background-image: url('./assets/images/woman-2.jpg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        max-width: 45%;
+        max-height: 100%;
+        box-sizing: border-box;
+        padding: 7% 5% 5% 5%;
+        text-align: center;
+    }
+
+    &__button {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 800px) {
+    .double-window-3 {
+        height: $block-heigt-tablet;
+
+        &__nested-window {
+            background-position: right;
+        }
+        &__button {
+            display: none;
+        }
+        &__info {
+            top: 50%;
+            transform: translate(0,-50%);
+            max-width: 55%;
+            padding: 13%;
+        }
+    }
+}
+

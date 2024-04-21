@@ -33,15 +33,6 @@ $block-heigt-mobile: 300px;
 
     &__button {
         margin-top: 50px;
-
-        &--1 {
-            display: none;
-            margin-top: 30px;
-        }
-    }
-
-    &-undertext {
-        text-align: center;
     }
 }
 
@@ -51,10 +42,6 @@ $block-heigt-mobile: 300px;
         height: $block-heigt-tablet;
         &__button {
             display: none;
-
-            &--1 {
-                display: inline-block;
-            }
         }
        
         &__info {

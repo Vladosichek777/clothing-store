@@ -44,7 +44,8 @@
         }
         &__img-item-wrap {
             width: calc(50% - 20px);
-            height: calc(50% - 20px);
+            // height: calc(50% - 20px);
+            height: auto;
         }
     }
 }

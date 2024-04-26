@@ -15,7 +15,7 @@
     &-title {
         @include raleway-14-subheading;
         text-decoration: underline;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         cursor: pointer;
     }
 
@@ -26,7 +26,7 @@
             text-align: left;
             margin-top: 0;
             color: black;
-            margin-top: 15px;
+            margin-top: 12px;
         }
     }
 }
@@ -35,7 +35,8 @@
     &__flex {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     &__item {
@@ -46,8 +47,9 @@
             margin-right: 15px;
         }
 
-        img {
-            max-width: 100%;
+        svg {
+            width: 25px;
+            height: 25px;
         }
     }
 }
@@ -74,7 +76,7 @@
 
     .social-media {
         &__flex {
-            flex-direction: column;
+            // flex-direction: column;
         }
         
     &__item {
@@ -82,8 +84,15 @@
             margin-right: 0px;
             margin-bottom: 10px;
         }
-
-       
     }
+    }
+}
+
+
+@media(max-width:500px) {
+    .social-media {
+        &__item {
+            width: 50%;
+        }
     }
 }

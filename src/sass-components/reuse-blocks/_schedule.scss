@@ -1,7 +1,7 @@
 .schedule {
     @include raleway-14-subheading;
     position: relative;
-    &::before {
+    &:not(.schedule--footer)::before {
         content: '';
         position: absolute;
         width: 30px;
@@ -9,6 +9,10 @@
         left: -34px;
         background-image: url('./assets/icons/time-svgrepo-com.svg');
         background-size: contain;
+    }
+
+    &.schedule--footer {
+        margin-top: 25px;
     }
     &--max-width {
         max-width: 130px;

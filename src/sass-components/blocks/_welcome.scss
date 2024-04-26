@@ -1,5 +1,4 @@
 .welcome {
-    outline: 2px solid red;
     position: relative;
     padding-top: 3vw;
     padding-bottom: 3vw;
@@ -29,7 +28,7 @@
         position: relative;
         margin-top: 30px;
 
-        &::before {
+        &:not(.footer-address__link)::before {
             content: '';
             position: absolute;
             top: -6px;
